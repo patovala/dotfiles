@@ -1,0 +1,9 @@
+[core]
+	editor = /usr/local/bin/vim
+[user]
+	name = Patricio Valarezo
+        email = patovala@pupilabox.net.ec
+#[diff]
+#    external = git_diff_wrapper
+[push]
+     default = simple

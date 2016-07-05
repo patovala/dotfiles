@@ -8,7 +8,7 @@
 
 dir=~/utilidades/dotfiles                    # dotfiles directory
 olddir=~/utilidades/dotfiles_old             # old dotfiles backup directory
-files="bashrc vimrc vim gitconfig"    # list of files/folders to symlink in homedir
+files="bashrc vimrc vim gitconfig tmux.conf" # list of files/folders to symlink in homedir
 
 ##########
 
@@ -32,5 +32,10 @@ done
 
 # install presto
 git clone --recursive https://github.com/sorin-ionescu/prezto.git "$HOME/.zprezto"
+
+setopt EXTENDED_GLOB
+for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
+  ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
+done
 
 chsh -s /bin/zsh

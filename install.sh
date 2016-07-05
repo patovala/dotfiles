@@ -29,3 +29,8 @@ for file in $files; do
     echo "Creating symlink to $file in home directory."
     ln -s $dir/$file ~/.$file
 done
+
+# install presto
+git clone --recursive https://github.com/sorin-ionescu/prezto.git "$HOME/.zprezto"
+
+chsh -s /bin/zsh

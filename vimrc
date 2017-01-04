@@ -33,7 +33,7 @@ map <C-t><right> :tabn<cr>
 
 set ruler
 colorscheme gruvbox
-set background=dark
+set background=light
 
 "Indent guides seems nice also but for js and python
 let g:indent_guides_enable_on_vim_startup = 1

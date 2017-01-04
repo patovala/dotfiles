@@ -15,7 +15,7 @@ ZSH_THEME="robbyrussell"
 HYPHEN_INSENSITIVE="true"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
-# DISABLE_AUTO_UPDATE="true"
+DISABLE_AUTO_UPDATE="true"
 
 # Uncomment the following line to change how often to auto-update (in days).
 # export UPDATE_ZSH_DAYS=13
@@ -49,7 +49,7 @@ HIST_STAMPS="dd/mm/yyyy"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git nvm debian grunt)
+plugins=(git nvm debian grunt safe-paste node pyenv rbenv)
 
 # User configuration
 
@@ -87,7 +87,13 @@ alias ta='tmux attach -t'
 alias tnew='tmux new -s'
 alias tls='tmux ls'
 alias tkill='tmux kill-session -t'
-alias mvim='vim'
 
-export NVM_DIR="/home/patovala/.nvm"
+#export NVM_DIR="/home/patovala/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+#PV no autocd
+unsetopt AUTO_CD
+
+#PV no share history
+setopt noincappendhistory
+setopt nosharehistory

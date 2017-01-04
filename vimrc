@@ -71,7 +71,7 @@ let skeletons#skeletonsDir = "~/.vim/bundle/vim-skeletons/skeletons"
 set t_Co=256
 
 "PV powerline con vim: https://gist.github.com/wm/4750511
-set rtp+=/Users/patovala/Library/Python/2.7/lib/python/site-packages/powerline/bindings/vim
+"set rtp+=/Users/patovala/Library/Python/2.7/lib/python/site-packages/powerline/bindings/vim
 
 if has("gui_running")
     let s:uname = system("uname")
@@ -80,3 +80,15 @@ if has("gui_running")
     endif
 endif
 set laststatus=2
+
+"PV auto strip whitespaces
+autocmd BufWritePre * StripWhitespace
+
+"PV pymode is doing slow the experience, disable ropevim
+let g:pymode_rope=0
+
+"PV control-p http://ctrlpvim.github.io/ctrlp.vim/#installation
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+
+"PV from here: https://invert.svbtle.com/using-vim-as-a-password-manager
+set cm=blowfish

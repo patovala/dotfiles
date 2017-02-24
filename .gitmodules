@@ -82,3 +82,29 @@
 [submodule "vim/bundle/colorschemes"]
 	path = vim/bundle/colorschemes
 	url = https://github.com/flazz/vim-colorschemes.git
+[submodule "vim/bundle/vim-gitgutter"]
+	path = vim/bundle/vim-gitgutter
+        url = git://github.com/airblade/vim-gitgutter.git
+[submodule "vim/bundle/YouCompleteMe"]
+	path = vim/bundle/YouCompleteMe
+    url = https://github.com/Valloric/YouCompleteMe.git
+
+[submodule "vim/bundle/ctrlp.vim"]
+    path = vim/bundle/ctrlp.vim
+    url = https://github.com/ctrlpvim/ctrlp.vim.git
+
+[submodule "vim/bundle/fugitive-gitlab.vim"]
+    path = vim/bundle/fugitive-gitlab.vim
+    url = https://github.com/shumphrey/fugitive-gitlab.vim.git
+
+[submodule "vim/bundle/vim-pug"]
+    path = vim/bundle/vim-pug
+    url =   git://github.com/digitaltoad/vim-pug.git
+
+[submodule "vim/bundle/vim-swift"]
+    path = vim/bundle/vim-swift
+    url = git://github.com/toyamarinyon/vim-swift.git
+
+[submodule "vim/bundle/vimproc.vim"]
+    path = vim/bundle/vimproc.vim
+    url = https://github.com/Shougo/vimproc.vim.git

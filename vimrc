@@ -73,12 +73,12 @@ set t_Co=256
 "PV powerline con vim: https://gist.github.com/wm/4750511
 "set rtp+=/Users/patovala/Library/Python/2.7/lib/python/site-packages/powerline/bindings/vim
 
-if has("gui_running")
-    let s:uname = system("uname")
-    if s:uname == "Darwin\n"
-        set guifont=Meslo\ LG\ S\ for\ Powerline
-    endif
-endif
+"if has("gui_running")
+    "let s:uname = system("uname")
+    "if s:uname == "Darwin\n"
+        "set guifont=Meslo\ LG\ S\ for\ Powerline
+    "endif
+"endif
 set laststatus=2
 
 "PV auto strip whitespaces
@@ -92,3 +92,37 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 "PV from here: https://invert.svbtle.com/using-vim-as-a-password-manager
 set cm=blowfish
+
+"PV syntastic recomended configs https://github.com/vim-syntastic/syntastic#settings
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 0
+let g:syntastic_check_on_wq = 1
+" silent! nmap <F6> :SyntasticToggleMode<CR>
+" http://stackoverflow.com/questions/20030603/vim-syntastic-how-to-disable-the-checker
+let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': [],'passive_filetypes': [] }
+nnoremap <C-w>E :SyntasticCheck<CR> :SyntasticToggleMode<CR>
+
+let g:fugitive_gitlab_domains = ['http://mygitlab', 'http://mygitlab.mydomain.com']
+
+"PV cosas para typescript: http://www.blog.bdauria.com/?p=692
+let g:typescript_compiler_binary = 'tsc'
+let g:typescript_compiler_options = ''
+autocmd QuickFixCmdPost [^l]* nested cwindow
+autocmd QuickFixCmdPost    l* nested lwindow
+"PV :make para compilar el typescript
+
+"PV mostrar status en cada split
+" [buffer number] followed by filename:
+set statusline=[%n]\ %t
+" for Syntastic messages:
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+" show line#:column# on the right hand side
+set statusline+=%=%l:%c
+
+

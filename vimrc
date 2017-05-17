@@ -125,4 +125,5 @@ set statusline+=%*
 " show line#:column# on the right hand side
 set statusline+=%=%l:%c
 
-
+"PV shortcut para NerdTreeToggle
+map <silent> <C-n> :NERDTreeToggle<CR>

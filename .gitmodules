@@ -108,6 +108,9 @@
 [submodule "vim/bundle/vimproc.vim"]
     path = vim/bundle/vimproc.vim
     url = https://github.com/Shougo/vimproc.vim.git
-[submodule "vim/bundle/tsuquyomi"]
-	path = vim/bundle/tsuquyomi
-	url = https://github.com/Quramy/tsuquyomi.git
+[submodule "vim/bundle/delmitmate"]
+	path = vim/bundle/delmitmate
+	url = git://github.com/Raimondi/delimitMate.git
+[submodule "vim/bundle/PHP-Indenting-for-VIm"]
+	path = vim/bundle/PHP-Indenting-for-VIm
+	url = https://github.com/2072/PHP-Indenting-for-VIm.git

@@ -87,12 +87,10 @@
         url = git://github.com/airblade/vim-gitgutter.git
 [submodule "vim/bundle/YouCompleteMe"]
 	path = vim/bundle/YouCompleteMe
-    url = https://github.com/Valloric/YouCompleteMe.git
-
+        url = https://github.com/Valloric/YouCompleteMe.git
 [submodule "vim/bundle/ctrlp.vim"]
     path = vim/bundle/ctrlp.vim
     url = https://github.com/ctrlpvim/ctrlp.vim.git
-
 [submodule "vim/bundle/fugitive-gitlab.vim"]
     path = vim/bundle/fugitive-gitlab.vim
     url = https://github.com/shumphrey/fugitive-gitlab.vim.git

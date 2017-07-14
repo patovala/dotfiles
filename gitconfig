@@ -1,5 +1,5 @@
 [core]
-	editor = /usr/local/bin/vim
+	editor = /usr/bin/vim
 [user]
 	name = Patricio Valarezo
         email = patovala@pupilabox.net.ec

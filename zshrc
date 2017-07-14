@@ -52,9 +52,7 @@ DISABLE_AUTO_UPDATE="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git nvm brew safe-paste pyenv npm)
-
-source $ZSH/oh-my-zsh.sh
+plugins=(git nvm)
 
 # User configuration
 
@@ -94,9 +92,12 @@ alias tkill='tmux kill-session -t'
 #export NVM_DIR="/home/patovala/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
+<<<<<<< HEAD
 #PV no autocd
 unsetopt AUTO_CD
 
+=======
+>>>>>>> quitando presto
 #PV no share history
 setopt noincappendhistory
 setopt nosharehistory

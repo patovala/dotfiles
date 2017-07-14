@@ -31,11 +31,10 @@ for file in $files; do
 done
 
 # install presto
-git clone --recursive https://github.com/sorin-ionescu/prezto.git "$HOME/.zprezto"
+# git clone --recursive https://github.com/sorin-ionescu/prezto.git "$HOME/.zprezto"
 
-setopt EXTENDED_GLOB
-for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
-  ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
-done
+# install oh-my-zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
-chsh -s /bin/zsh
+echo "DONE"
+# chsh -s /bin/zsh

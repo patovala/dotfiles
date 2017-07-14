@@ -92,12 +92,9 @@ alias tkill='tmux kill-session -t'
 #export NVM_DIR="/home/patovala/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
-<<<<<<< HEAD
 #PV no autocd
 unsetopt AUTO_CD
 
-=======
->>>>>>> quitando presto
 #PV no share history
 setopt noincappendhistory
 setopt nosharehistory

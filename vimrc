@@ -17,6 +17,9 @@ set backspace=indent,eol,start
 set clipboard=unnamed
 "PV set ctrlp
 set runtimepath^=~/.vim/bundle/ctrlp.vim
+"PV always numbers
+set number
+
 
 call pathogen#infect()
 call pathogen#helptags()

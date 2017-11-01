@@ -110,6 +110,7 @@ let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': [],'passive_
 nnoremap <C-w>E :SyntasticCheck<CR> :SyntasticToggleMode<CR>
 
 let g:fugitive_gitlab_domains = ['http://mygitlab', 'http://mygitlab.mydomain.com']
+set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 
 "PV cosas para typescript: http://www.blog.bdauria.com/?p=692
 let g:typescript_compiler_binary = 'tsc'
